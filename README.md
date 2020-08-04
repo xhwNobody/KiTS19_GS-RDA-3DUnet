@@ -8,7 +8,8 @@ Using the batchgenerators to get more samples makes the model more generalized.
 The first step is to roughly segment the kidney and tumor areas.The adopted model introduces the residual dual attention module on the basis of Unet, so it is called RDA-3DUnet，which is described in first_step_kidney_segmentation/build_RDA_3DUnet.py.Training data can be obtained from here.
 ## 4.Fine Tumor Segmentation
 The second step is to further segment the tumor area on the basis of the first step. The adopted model introduces gated shape convolution based on the RDA-3DUnet model, and designs a gated shape sub-network to predict the boundary of the tumor, thereby improving the accuracy of tumor segmentation.You can learn more about it from second_step_tumor_segmentation/build_GS_RDAunet.py,and training data can be obtained from here.
-  ![image](https://github.com/xhwNobody/KiTS19_GS-RDA-3DUnet/tree/master/second_step_tumor_segmentation/model-architecture.jpg)
+
+![image](https://github.com/xhwNobody/KiTS19_GS-RDA-3DUnet/tree/master/second_step_tumor_segmentation/model-architecture.jpg)
 
 ## 5.Result
 
