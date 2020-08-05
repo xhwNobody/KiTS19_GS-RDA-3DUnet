@@ -10,6 +10,6 @@ The first step is to roughly segment the kidney and tumor areas.The adopted mode
 The second step is to further segment the tumor area on the basis of the first step. The adopted model introduces gated shape convolution based on the RDA-3DUnet model, and designs a gated shape sub-network to predict the boundary of the tumor, thereby improving the accuracy of tumor segmentation.You can learn more about it from second_step_tumor_segmentation/build_GS_RDAunet.py,and training data can be obtained from here.The architecture is below.
 ![images](https://raw.githubusercontent.com/xhwNobody/KiTS19_GS-RDA-3DUnet/master/second_step_tumor_segmentation/architecture.jpg)
 The Tumor Shape Branch can obtain the tumor shape such as below.
-![images](https://raw.githubusercontent.com/xhwNobody/KiTS19_GS-RDA-3DUnet/master/second_step_tumor_segmentation/result.png)
+![images](https://raw.githubusercontent.com/xhwNobody/KiTS19_GS-RDA-3DUnet/master/second_step_tumor_segmentation/Result.png)
 ## 5.Reference
 https://github.com/nv-tlabs/GSCNN
